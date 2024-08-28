@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daysInMonth(month, year) {
+            return new Date(year, month, 0).getDate();
+        }
+        
+        function GFG_Fun() {
+            let date = new Date();
+            let month = 2;
+            let year = 2020;
+            console.log("Number of days in " + month
+                + "and month of the year " + year
+                + " is " + daysInMonth(month, year));
+        }
+        GFG_Fun()
+    </script>
+</body>
+</html>

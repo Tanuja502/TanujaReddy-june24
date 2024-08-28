@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isValiddate(date){
+            const Date=new Date(date);
+            return !isNaN(date.getTime());
+        }
+        console.log(isValiddate("2024-09-29"))
+        console.log(isValiddate("Helloo world"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let units = window.prompt("Enter the no of units");
+        units = Number(units);
+        let type = window.prompt("Enter type of usage (domestic/industrial)").toLowerCase();
+        let rate;
+        if (type === "domestic") {
+            rate = 10;
+        } else if (type === "industrial") {
+            rate = 15;
+        } else {
+            console.log("Invalid type of usage");
+        }
+        let bill = rate * units;
+        if (rate) {
+            console.log(`Current Bill: ${bill} Rs`);
+        }
+    </script>
+</body>
+</html>

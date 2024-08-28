@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let principal = 100000; 
+        let annualInterestRate = 4;
+        let tenureYears = 5;
+        let monthlyInterestRate = annualInterestRate / (12 * 100);
+        let tenureMonths = tenureYears * 12;
+        let emi = (principal * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, tenureMonths)) / 
+        (Math.pow(1 + monthlyInterestRate, tenureMonths) - 1);
+        console.log("EMI: $" + emi.toFixed(2));
+    </script>
+</body>
+</html>
