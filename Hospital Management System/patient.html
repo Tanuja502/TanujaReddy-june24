@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+<style>
+    body,h2,label,input,button{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Arial,sans-serif;
+        background-color: aqua;
+        color: black;
+        line-height: 2.0;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 20px;
+    }
+    header h2{
+        font-size: 36px;
+    }
+    main{
+        padding: 40px;
+        text-align: center;
+    }
+    .patient-form{
+        background-color: pink;
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 3px;
+        display:inline-block;
+        text-align: center;
+        box-shadow: 0px 0px 5px black;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    button{
+        background-color: rgb(230, 106, 215);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+</style>
+<body>
+    <header>
+        <h2>Patient Details</h2>
+    </header>
+    <main>
+        <section class="patient-form">
+            <form action="patient_details.html" method="post">
+                <label for="name">Name</label>
+                <input type="name" id="name" name="name" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+                <button type="submit">Submit</button>
+                <button type="view">view</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

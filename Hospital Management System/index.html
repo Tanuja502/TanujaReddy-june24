@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,h1,h2,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color:pink;
+            color:black;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+
+        }
+        header{
+            background-color:gray;
+            color: black;
+            text-align: center;
+            padding: 20px,0;
+
+        }
+        header h1{
+            font-size: 36px;
+
+        }
+        nav{
+            background-color: azure;
+        }
+        nav,ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline;
+            margin-right: 50px;
+        }
+        nav a{
+            color:black;
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        main{
+            padding: 40px;
+        }
+        section{
+            background-color: antiquewhite;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid;
+        }
+        section h2{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        footer{
+            background-color: blueviolet;
+            color: aquamarine;
+            text-align: center;
+            padding: 10px,0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Welcome to our hospital
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="patient.html">Patients</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class=""appointment>
+            <h2>Book an appointment</h2>
+            <a href="appointment.html">Book Now</a>
+
+        </section>
+        <section class="patient">
+            <h2>Patients</h2>
+            <a href="patient.html">view and manage patient records</a>
+
+        </section>
+        <section class="doctor">
+            <h2>Doctors</h2>
+            <p>Find information about our medical staff</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Hospital Management System. All rights reserved.
+    </footer>
+</body>
+</html>

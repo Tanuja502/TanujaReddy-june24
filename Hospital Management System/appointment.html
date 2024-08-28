@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="appointment.css">
+    <style>
+        body,h1,h2,label,select,input,button{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial,sans-serif;
+            background-color:plum;
+            color: black;
+            line-height:2.0;
+            margin: 0;
+            padding: 0;
+
+        }
+        header{
+            background-color:white;
+            color: red;
+            text-align: center;
+            padding: 20px,0;
+        }
+        header h1{
+            font-size: 36px;
+
+        }
+        main{
+            padding: 40px;
+            text-align: center;
+        }
+        .appointment-form{
+            background-color:whitesmoke;
+            padding: 30px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0px 0px 5px black;
+
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        select,input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button{
+            background-color: aqua;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book an Appointment</h1>
+    </header>
+    <main>
+        <section class="appointment-form">
+            <h2>Appointment Details</h2>
+            <form action="book_appointment.html" method="POST">
+                <label for="doctor">Select doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="dr_Tanuja">Dr.Tanuja</option>
+                    <option value="dr_Roohi">Dr.Roohi</option>
+                    <option value="dr_Sumana">Dr.Sumana</option>
+                    <option value="dr_Smily">Dr.Smily</option>
+                    <option value="dr_Sowmya">Dr.Sowmya</option>
+                </select>
+                <label for="date">Select date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">select time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Hospital Management System. All rights reserved.
+    </footer>
+</body>
+</html>
